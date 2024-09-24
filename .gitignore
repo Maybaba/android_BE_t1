@@ -1,3 +1,10 @@
+
+### Android Spring Test BE ###
+.idea/
+src/main/resources/env.properties
+.DS_Store
+application-*.yml
+
 HELP.md
 .gradle
 build/
