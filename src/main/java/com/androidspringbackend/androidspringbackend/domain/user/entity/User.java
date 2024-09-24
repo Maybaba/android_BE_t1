@@ -12,7 +12,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 //@EqualsAndHashCode(of = "id")
 @Table(name = "user")
-public class user {
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
