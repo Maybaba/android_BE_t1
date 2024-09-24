@@ -14,8 +14,8 @@ public class UserDao {
     @Autowired
     private UserRepository repository;
 
-    public void saveUser(User user) {
-        repository.save(user);
+    public User save(User user) {
+        return repository.save(user);
     }
 
     public List<User> getAllUsers() {
