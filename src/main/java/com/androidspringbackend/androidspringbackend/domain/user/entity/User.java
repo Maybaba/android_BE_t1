@@ -12,13 +12,20 @@ import javax.persistence.*;
 @NoArgsConstructor
 //@EqualsAndHashCode(of = "id")
 @Table(name = "user")
-public class user {
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer userIndexId;
+    @Column(name = "user_idx_id", nullable = false)
+    private Integer userIdxId;
+
+    @Column(name = "user_email", nullable = false, unique = true)
     private String userEmail;
+
+    @Column(name = "user_password", nullable = true)
     private String userPassword;
+
+    @Column(name = "user_name", nullable = true)
     private String userName;
 
 }
