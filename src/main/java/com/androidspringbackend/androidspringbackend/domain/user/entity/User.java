@@ -19,11 +19,11 @@ public class User {
     @Column(name = "user_idx_id", nullable = false)
     private Integer userIdxId;
 
-    @Column(name = "user_email", nullable = false, unique = true)
-    private String userEmail;
+    @Column(name = "branch", nullable = true)
+    private String branch;
 
-    @Column(name = "user_password", nullable = true)
-    private String userPassword;
+    @Column(name = "location", nullable = true)
+    private String location;
 
     @Column(name = "user_name", nullable = true)
     private String userName;
